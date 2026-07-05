@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Dark mode retrofit: rather than hand-adding a `dark:` variant next to every one of the ~30
+   components' Tailwind classes, override the handful of recurring slate/brand utility classes
+   globally under a `.dark` ancestor. `.dark .bg-white` (0,2,0 specificity) beats `.bg-white`
+   alone (0,1,0), so this cleanly re-themes every existing and future component that sticks to
+   the same slate/brand color vocabulary, with zero risk of missing a spot or double-applying a
+   variant. See ThemeContext.tsx for the toggle that adds/removes `.dark` on <html>. */
+.dark .bg-white {
+  @apply bg-slate-800;
+}
+.dark .bg-slate-50 {
+  @apply bg-slate-900;
+}
+.dark .bg-slate-50\/50 {
+  @apply bg-slate-900/50;
+}
+.dark .bg-slate-100 {
+  @apply bg-slate-700;
+}
+.dark .bg-slate-200 {
+  @apply bg-slate-600;
+}
+.dark .bg-slate-300 {
+  @apply bg-slate-600;
+}
+.dark .bg-slate-400 {
+  @apply bg-slate-500;
+}
+.dark .bg-brand-50 {
+  @apply bg-brand-900/40;
+}
+.dark .bg-brand-100 {
+  @apply bg-brand-900/50;
+}
+
+.dark .text-slate-900 {
+  @apply text-slate-100;
+}
+.dark .text-slate-800 {
+  @apply text-slate-200;
+}
+.dark .text-slate-700 {
+  @apply text-slate-300;
+}
+.dark .text-slate-600 {
+  @apply text-slate-300;
+}
+.dark .text-slate-500 {
+  @apply text-slate-400;
+}
+/* text-slate-400 is intentionally left unmapped: slate-400 already has solid contrast against
+   the slate-900/950 dark backgrounds used here, and mapping it to slate-500 would form a
+   circular @apply dependency with the rule above (Tailwind tracks @apply cycles by utility
+   class identity, not by the full ".dark ..." selector). */
+.dark .text-brand-700 {
+  @apply text-brand-400;
+}
+.dark .text-brand-800 {
+  @apply text-brand-300;
+}
+
+.dark .border-slate-200 {
+  @apply border-slate-700;
+}
+.dark .border-slate-300 {
+  @apply border-slate-600;
+}
+.dark .border-slate-100 {
+  @apply border-slate-800;
+}
+.dark .border-brand-500 {
+  @apply border-brand-400;
+}
+.dark .ring-slate-300 {
+  @apply ring-slate-600;
+}
+
+.dark .hover\:bg-slate-100:hover {
+  @apply bg-slate-700;
+}
+.dark .hover\:bg-slate-50:hover {
+  @apply bg-slate-800;
+}
+.dark .hover\:text-slate-900:hover {
+  @apply text-slate-100;
+}
+.dark .hover\:text-slate-700:hover {
+  @apply text-slate-300;
+}
+.dark .hover\:text-brand-800:hover {
+  @apply text-brand-300;
+}
+.dark .disabled\:bg-slate-300:disabled {
+  @apply bg-slate-600;
+}
+.dark .disabled\:bg-slate-100:disabled {
+  @apply bg-slate-700;
+}
+
+/* Same trick for the semantic status colors (StatusPill, QuotaBar, Toast, badges) - the light
+   pastel "50/100" badge backgrounds read as washed-out on a dark page, so they get a muted,
+   translucent dark equivalent instead of a flat light one. */
+.dark .bg-red-50 {
+  @apply bg-red-900/40;
+}
+.dark .bg-red-100 {
+  @apply bg-red-900/50;
+}
+.dark .bg-amber-100 {
+  @apply bg-amber-900/50;
+}
+.dark .bg-emerald-100 {
+  @apply bg-emerald-900/50;
+}
+.dark .border-red-200 {
+  @apply border-red-800;
+}
+.dark .text-red-800 {
+  @apply text-red-300;
+}
+.dark .text-red-700 {
+  @apply text-red-300;
+}
+.dark .text-red-600 {
+  @apply text-red-400;
+}
+.dark .text-amber-800 {
+  @apply text-amber-300;
+}
+.dark .text-amber-600 {
+  @apply text-amber-400;
+}
+.dark .text-emerald-800 {
+  @apply text-emerald-300;
+}
+.dark .ring-amber-300 {
+  @apply ring-amber-700;
+}
+.dark .ring-red-300 {
+  @apply ring-red-700;
+}
+.dark .ring-emerald-300 {
+  @apply ring-emerald-700;
+}
+
+.markdown-body p {
+  margin-bottom: 0.5rem;
+}
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+.markdown-body ul,
+.markdown-body ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0.5rem;
+  list-style-position: outside;
+}
+.markdown-body ul {
+  list-style-type: disc;
+}
+.markdown-body ol {
+  list-style-type: decimal;
+}
+.markdown-body code {
+  @apply rounded bg-slate-100 px-1 py-0.5 text-[0.85em] text-slate-800 dark:bg-slate-700 dark:text-slate-200;
+}
+.markdown-body pre {
+  @apply mb-2 overflow-x-auto rounded-lg bg-slate-900 p-3 text-slate-100;
+}
+.markdown-body pre code {
+  @apply bg-transparent p-0 text-slate-100 dark:bg-transparent dark:text-slate-100;
+}
+.markdown-body table {
+  @apply mb-2 w-full border-collapse text-sm;
+}
+.markdown-body th,
+.markdown-body td {
+  @apply border border-slate-300 px-2 py-1 text-left dark:border-slate-600;
+}
+.markdown-body a {
+  @apply text-brand-600 underline dark:text-brand-400;
+}
+.markdown-body blockquote {
+  @apply border-l-4 border-slate-300 pl-3 italic text-slate-600 dark:border-slate-600 dark:text-slate-300;
+}
+
+.citation-marker {
+  @apply mx-0.5 inline-flex cursor-default items-center rounded bg-brand-100 px-1 text-[0.75em] font-semibold text-brand-700 dark:bg-brand-900/60 dark:text-brand-300;
+}
+
+/* "Export as PDF" is just the browser's native print-to-PDF: everything chrome-like (nav,
+   composer, buttons) is marked .no-print and hidden only in the print stylesheet, so printing
+   the Chat page shows nothing but the transcript. No extra PDF library/bundle weight needed. */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+}

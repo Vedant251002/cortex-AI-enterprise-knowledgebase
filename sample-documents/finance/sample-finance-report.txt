@@ -1,0 +1,26 @@
+[PLACEHOLDER DEMO DOCUMENT — CATEGORY: finance — FICTIONAL CONTENT]
+Atlantic Fictus Corp — Q3 Financial Summary (Demo v1.0, all figures fictional)
+
+For the third fiscal quarter of the demo year, Atlantic Fictus Corp reported total revenue
+of $42.7M, up 8.5% quarter-over-quarter, driven primarily by growth in the fictional
+"CloudWidget Suite" product line. Gross margin held steady at 61%, while operating expenses
+rose modestly to $18.3M due to a one-time investment in the fictional Northfield data
+center expansion.
+
+| Metric              | Q2 (Demo) | Q3 (Demo) | Change |
+|---------------------|-----------|-----------|--------|
+| Total Revenue       | $39.4M    | $42.7M    | +8.5%  |
+| Gross Margin        | 60%       | 61%       | +1 pt  |
+| Operating Expenses  | $17.1M    | $18.3M    | +7.0%  |
+| Net Income          | $9.8M     | $10.9M    | +11.2% |
+
+Net income for the quarter was $10.9M, representing an 11.2% increase over the prior
+quarter. The finance team attributes this to disciplined cost control in the Northfield and
+Lakeside regions, offset partially by increased marketing spend ahead of the fictional
+holiday sales cycle. The Board's fictional Audit Committee reviewed and approved these
+figures on the last business day of the quarter.
+
+This document is a synthetic placeholder generated for demonstration and testing of the
+Cortex AI Enterprise Knowledge Assistant ingestion pipeline, including its ability to
+parse and cite tabular data. It does not describe any real company, financial result, or
+investment advice.

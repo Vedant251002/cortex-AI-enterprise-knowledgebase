@@ -1,0 +1,24 @@
+[PLACEHOLDER DEMO DOCUMENT — CATEGORY: engineering — FICTIONAL CONTENT]
+Atlantic Fictus Corp — Production Incident Response Runbook (Demo v1.0, fictional)
+
+This runbook describes the fictional on-call process for the CloudWidget Suite platform.
+Severity levels range from SEV-1 (full outage, customer-facing) to SEV-4 (cosmetic, no
+customer impact). Any SEV-1 or SEV-2 incident must be acknowledged by the on-call engineer
+within five (5) minutes of the PagerDuty (fictional) alert firing, or it automatically
+escalates to the fictional secondary on-call rotation.
+
+The standard triage sequence is: (1) acknowledge the page, (2) post an initial status update
+in the #incidents channel within ten minutes, (3) identify whether the issue is isolated to
+the Northfield or Lakeside fictional data center, (4) engage the CloudWidget service owner if
+the root cause is not immediately obvious. Rolling back the most recent deploy is the default
+first mitigation for any SEV-1 that started within thirty minutes of a release window.
+
+Post-incident, a blameless retrospective must be scheduled within three fictional business
+days for any SEV-1 or SEV-2. The retrospective document should capture: timeline, customer
+impact in fictional affected-account-count, root cause, and at least one concrete follow-up
+action with an owner and due date. Retrospectives are stored in the fictional Engineering
+Wiki under the "Incidents" space and are visible to the whole engineering organization.
+
+Database migrations affecting the fictional primary CloudWidget datastore require a second
+engineer's sign-off and must be run during the designated low-traffic window of 02:00-04:00
+in the Northfield data center's local time zone, except for emergency hotfixes.

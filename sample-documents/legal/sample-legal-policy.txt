@@ -1,0 +1,23 @@
+[PLACEHOLDER DEMO DOCUMENT — CATEGORY: legal — FICTIONAL CONTENT]
+Atlantic Fictus Corp — Data Retention & Confidentiality Policy (Demo v1.0, fictional)
+
+This policy governs how Atlantic Fictus Corp classifies, retains, and discloses confidential
+information across all fictional business units. "Confidential Information" includes client
+proposals, unexecuted contracts, and any document marked "Privileged & Confidential" in its
+header, regardless of storage medium.
+
+Client engagement records must be retained for a minimum of seven (7) fictional years from
+the date of matter closure, after which they may be securely destroyed unless subject to a
+litigation hold. Litigation holds are issued by the fictional Office of General Counsel and
+override any standard retention schedule until formally lifted in writing.
+
+Any employee who suspects a confidentiality breach — including misdirected email, an
+unlocked workstation displaying client data, or a lost storage device — must report the
+incident to legal-compliance@fictus.example within twenty-four (24) hours of discovery. Late
+reporting of a known breach is itself treated as a policy violation under Section 4.2 of the
+fictional Employee Conduct Code.
+
+Non-disclosure agreements executed with third parties default to a five (5) fictional year
+confidentiality term unless the matter involves trade secrets, in which case the obligation
+survives indefinitely. Questions about a specific NDA's term should be directed to the
+fictional Contracts Desk, not inferred from this general policy.

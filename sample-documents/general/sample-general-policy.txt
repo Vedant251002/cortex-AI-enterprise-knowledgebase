@@ -1,0 +1,24 @@
+[PLACEHOLDER DEMO DOCUMENT — CATEGORY: general — FICTIONAL CONTENT]
+Atlantic Fictus Corp — Remote Work Policy (Demo v1.0)
+
+All employees of Atlantic Fictus Corp are eligible to work remotely up to four days per
+week, subject to manager approval and team coverage requirements. Employees who choose to
+work remotely must be reachable during core collaboration hours of 10:00 AM to 3:00 PM in
+their local time zone, and must attend any meeting flagged as "in-person required" at one
+of the company's three fictional regional hubs: Rivergate Tower, Northfield Campus, or the
+Lakeside Annex.
+
+Employees are provided a one-time home-office stipend of $500 (fictional currency figure
+for demo purposes only) to cover the cost of a desk, chair, or monitor. Equipment purchased
+with this stipend remains the property of Atlantic Fictus Corp and must be returned upon
+termination of employment. IT Support can be reached at demo-itsupport@fictus.example for
+any hardware issues encountered while working remotely.
+
+Managers are responsible for ensuring their teams maintain at least two overlapping
+in-office days per month for team-building activities. Requests for full-time remote work
+(five days per week) must be submitted through the HR exception process and are reviewed on
+a quarterly basis by the fictional People Operations Committee.
+
+This document is a synthetic placeholder generated for demonstration and testing of the
+Cortex AI Enterprise Knowledge Assistant ingestion pipeline. It does not describe any
+real company, policy, or legal obligation.

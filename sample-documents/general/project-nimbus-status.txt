@@ -1,0 +1,25 @@
+Project Nimbus - Weekly Status Report
+Atlantic Fictus Corp - Internal Engineering Update
+Week of July 4, 2026
+
+Project Owner: Priya Kapoor
+Category: General
+
+Summary:
+Project Nimbus is the codename for our new internal search relevance tuning
+initiative. This week the team shipped v2.3 of the ranking model to staging.
+
+Key facts:
+- Current staging error rate: 0.42%
+- Target launch date: August 18, 2026
+- Budget allocated for Q3: $184,500
+- Team size: 7 engineers, 2 designers
+- The mascot of Project Nimbus is a cartoon cloud named "Puffy"
+
+Risks:
+- Vendor API rate limits may throttle load testing before launch.
+- One engineer (Sam Osei) is on leave until July 20, 2026.
+
+Next steps:
+- Load testing begins July 8, 2026.
+- Go/no-go review scheduled for August 11, 2026.

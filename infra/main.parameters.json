@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "baseName": {
+      "value": "cortex"
+    },
+    "primaryLocation": {
+      "value": "southindia"
+    },
+    "documentIntelligenceLocation": {
+      "value": "centralindia"
+    },
+    "cosmosLocation": {
+      "value": "westus2"
+    },
+    "chatModelName": {
+      "value": "gpt-5-mini"
+    },
+    "embeddingModelName": {
+      "value": "text-embedding-3-small"
+    }
+  }
+}
